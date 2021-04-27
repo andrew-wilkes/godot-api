@@ -13,7 +13,7 @@ func _ready():
 		var mod = Color.from_hsv(hue, 0.5, 1.0)
 		sprite.modulate = mod
 		sqr.fill(mod)
-		img.blend_rect(sqr, Rect2(Vector2(0,0), sqr.get_size()), sp.position)
+		img.blend_rect(sqr, Rect2(Vector2.ZERO, sqr.get_size()), sp.position)
 		hue += hue_step
 	img.save_png("composite.png")
 
