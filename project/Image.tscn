@@ -35,3 +35,32 @@ texture = ExtResource( 2 )
 [node name="Sprite6" type="Sprite" parent="BG/Sprites"]
 position = Vector2( 0, 96 )
 texture = ExtResource( 2 )
+
+[node name="BG2" type="Sprite" parent="."]
+position = Vector2( 384, 64 )
+texture = ExtResource( 3 )
+
+[node name="Sprites" type="Node2D" parent="BG2"]
+
+[node name="Sprite" type="Sprite" parent="BG2/Sprites"]
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="BG2/Sprites"]
+position = Vector2( 16, 16 )
+texture = ExtResource( 2 )
+
+[node name="Sprite3" type="Sprite" parent="BG2/Sprites"]
+position = Vector2( 32, 32 )
+texture = ExtResource( 2 )
+
+[node name="Sprite4" type="Sprite" parent="BG2/Sprites"]
+position = Vector2( 48, 48 )
+texture = ExtResource( 2 )
+
+[node name="Sprite5" type="Sprite" parent="BG2/Sprites"]
+position = Vector2( 64, 64 )
+texture = ExtResource( 2 )
+
+[node name="Sprite6" type="Sprite" parent="BG2/Sprites"]
+position = Vector2( 80, 80 )
+texture = ExtResource( 2 )
