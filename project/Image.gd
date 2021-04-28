@@ -31,6 +31,19 @@ func _ready():
 		hue += hue_step
 	img.save_png("composite2.png")
 
+	# Using a mask to modulate shapes
+	img = $BG3.texture.get_data()
+	for sp in $BG3/Sprites.get_children():
+		var sprite : Sprite = sp
+		var dot = sprite.texture.get_data()
+		var mask = dot.duplicate() # The mask is a white dot
+		var mod = Color.from_hsv(hue, 0.5, 1.0, 0.5)
+		sprite.modulate = mod
+		dot.fill(mod) # The dot changes to a colored square
+		img.blend_rect_mask(dot, mask, Rect2(Vector2.ZERO, dot.get_size()), sp.position)
+		hue += hue_step
+	img.save_png("composite3.png")
+
 
 func generate_image(size: Vector2, color: Color, fn: String):
 	var img = Image.new()

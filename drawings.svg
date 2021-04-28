@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -75,5 +75,14 @@
        y="-920"
        inkscape:export-xdpi="43.885715"
        inkscape:export-ydpi="43.885715" />
+    <circle
+       style="fill:#ffffff;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+       id="path947"
+       cx="-852.97754"
+       cy="-533.03656"
+       r="100"
+       inkscape:export-filename="/home/andrew/dev/godot/git/andrew-wilkes/godot-api/project/circle.png"
+       inkscape:export-xdpi="15.258303"
+       inkscape:export-ydpi="15.258303" />
   </g>
 </svg>
